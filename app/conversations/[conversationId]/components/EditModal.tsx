@@ -1,10 +1,9 @@
 "use client";
 
-import getCurrentUser from "@/app/actions/getCurrentUser";
 import Button from "@/app/components/Button";
 import Modal from "@/app/components/Modal";
 import Input from "@/app/components/inputs/Input";
-import { Conversation, User } from "@prisma/client";
+import { Conversation } from "@prisma/client";
 import axios from "axios";
 import { useRouter } from "next/navigation";
 import React, { useState } from "react";
@@ -30,8 +29,6 @@ const EditModal: React.FC<EditModalProps> = ({
     const {
         register,
         handleSubmit,
-        setValue,
-        watch,
         formState: {
             errors
         }
@@ -81,6 +78,7 @@ const EditModal: React.FC<EditModalProps> = ({
                                 id="name"
                                 required
                                 errors={errors}
+                                type="text"
                             />
                         </div>
                     </div>
