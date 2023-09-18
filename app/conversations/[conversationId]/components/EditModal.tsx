@@ -68,7 +68,7 @@ const EditModal: React.FC<EditModalProps> = ({
                             Edit Group Chat
                         </h2>
                         <p className="mt-1 text-sm leading-6 text-gray-600">
-                            Edit your group's public information.
+                            Edit your group public information.
                         </p>
                         <div className="mt-10 flex flex-col gap-y-8">
                             <Input
