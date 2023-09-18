@@ -29,7 +29,7 @@ const UserBox: React.FC<UserBoxProps> = ({
                 router.refresh();
             })
             .finally(() => setIsLoading(false))
-    }, []);
+    }, [data.id, router]);
 
     return (
         <>
